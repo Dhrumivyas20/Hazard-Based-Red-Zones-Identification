@@ -1,0 +1,26 @@
+[
+  {
+    "id": "usr_admin_01",
+    "name": "Admin Commander",
+    "email": "admin@gmail.com",
+    "password": "admin",
+    "role": "COMMANDER",
+    "department": "Regional Situation Room • NARADA Operational Command",
+    "badge": "🛡️ Commander",
+    "jurisdiction": "Rudraprayag & Chamoli Corridor",
+    "clearance": "Operational Lead",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_ndrf_01",
+    "name": "Cmdr. Vikram Singh Rathore",
+    "email": "commander.vikram@ndrf.gov.in",
+    "password": "NDRF@Rescue2026!",
+    "role": "NDRF / SDRF Incident Commander",
+    "department": "8th Battalion NDRF (Himalayan Quick Response)",
+    "badge": "🚨 NDRF Commander",
+    "jurisdiction": "Western & Central Himalayan Corridors",
+    "clearance": "Incident Response Lead",
+    "created_at": "2026-01-01T00:00:00.000Z"
+  }
+]

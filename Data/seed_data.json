@@ -1,0 +1,214 @@
+{
+  "landing_metrics": [
+    {
+      "metric_key": "red_zone_accuracy",
+      "metric_name": "AI Red-Zone Delineation",
+      "metric_value": "98.7%",
+      "badge_type": "green",
+      "description": "Deep neural spatial models delineating slope instability & flash-flood red zones"
+    },
+    {
+      "metric_key": "capacity_factors",
+      "metric_name": "Carrying Capacity Modeling",
+      "metric_value": "15+ Factors",
+      "badge_type": "blue",
+      "description": "Multi-dimensional ML algorithms modeling ecological & demographic stress thresholds"
+    },
+    {
+      "metric_key": "relocation_speed",
+      "metric_name": "Safe-Site & Relocation Dispatch",
+      "metric_value": "< 60s",
+      "badge_type": "orange",
+      "description": "Autonomous AI discovery of low-risk safe sites with NDMA evacuation roadmaps"
+    }
+  ],
+  "feature_modules": [
+    {
+      "id": 1,
+      "title": "AI Red Zone Prediction",
+      "category": "prediction",
+      "icon_type": "ai_brain",
+      "color_theme": "blue",
+      "description": "Deep neural networks analyze multi-temporal terrain strain, precipitation thresholds, and seismic fragility to delineate high-risk Red Zones before disasters occur."
+    },
+    {
+      "id": 2,
+      "title": "Dynamic Red Zone Mapping",
+      "category": "gis",
+      "icon_type": "map",
+      "color_theme": "green",
+      "description": "Interactive multi-layered GIS heatmaps showing high-hazard buffer zones, landslide runout corridors, and flash-flood susceptibility envelopes."
+    },
+    {
+      "id": 3,
+      "title": "Immediate Relocation Alerts",
+      "category": "alerts",
+      "icon_type": "bell",
+      "color_theme": "orange",
+      "description": "Automated prioritization engine that ranks endangered habitations by urgency score, triggering instant administrative dispatch and evacuation directives."
+    },
+    {
+      "id": 4,
+      "title": "AI Relocation Priority Index",
+      "category": "priority_index",
+      "icon_type": "priority",
+      "color_theme": "amber",
+      "description": "Multi-criteria machine learning models rank endangered habitations by physical hazard severity, structural density, and displacement urgency."
+    },
+    {
+      "id": 5,
+      "title": "Automatic Safe-Site Discovery",
+      "category": "safe_site",
+      "icon_type": "safe_site",
+      "color_theme": "purple",
+      "description": "Autonomous geospatial algorithms evaluate terrain slope, hydrology, and access to automatically discover and verify optimal low-risk resettlement zones."
+    },
+    {
+      "id": 6,
+      "title": "Automated Relocation Action Directives",
+      "category": "directives",
+      "icon_type": "directives",
+      "color_theme": "cyan",
+      "description": "Generates NDMA-compliant phase-by-phase evacuation roadmaps connecting red zone settlements directly to newly discovered safe sites."
+    }
+  ],
+  "habitations": [
+    {
+      "id": 1,
+      "name": "Upper Sunil Settlement, Joshimath",
+      "state": "Uttarakhand",
+      "district": "Chamoli",
+      "latitude": 30.5562,
+      "longitude": 79.5678,
+      "population": 3450,
+      "area_sq_km": 1.2,
+      "max_safe_carrying_capacity": 1800,
+      "current_carrying_capacity_load_pct": 191.6,
+      "hazard_zone_tier": "RED",
+      "relocation_urgency_score": 94,
+      "slope_angle_deg": 38.5,
+      "rainfall_24h_mm": 185.0,
+      "soil_saturation_pct": 84.0,
+      "factor_of_safety": 0.78,
+      "evacuation_status": "CRITICAL_ACTION_REQUIRED",
+      "safe_haven_location": "Auli Ridge Base Transit Hub"
+    },
+    {
+      "id": 2,
+      "name": "Meppadi Hill Slope Sector, Wayanad",
+      "state": "Kerala",
+      "district": "Wayanad",
+      "latitude": 11.5512,
+      "longitude": 76.1264,
+      "population": 4200,
+      "area_sq_km": 2.1,
+      "max_safe_carrying_capacity": 2500,
+      "current_carrying_capacity_load_pct": 168.0,
+      "hazard_zone_tier": "RED",
+      "relocation_urgency_score": 91,
+      "slope_angle_deg": 41.0,
+      "rainfall_24h_mm": 240.0,
+      "soil_saturation_pct": 92.0,
+      "factor_of_safety": 0.69,
+      "evacuation_status": "EVACUATION_IN_PROGRESS",
+      "safe_haven_location": "Kalpetta Relief Camp-3"
+    },
+    {
+      "id": 3,
+      "name": "Dhalli Ridge Habitation, Shimla",
+      "state": "Himachal Pradesh",
+      "district": "Shimla",
+      "latitude": 31.1048,
+      "longitude": 77.1734,
+      "population": 2800,
+      "area_sq_km": 1.5,
+      "max_safe_carrying_capacity": 2200,
+      "current_carrying_capacity_load_pct": 127.2,
+      "hazard_zone_tier": "ORANGE",
+      "relocation_urgency_score": 68,
+      "slope_angle_deg": 28.0,
+      "rainfall_24h_mm": 95.0,
+      "soil_saturation_pct": 62.0,
+      "factor_of_safety": 1.15,
+      "evacuation_status": "PRE_EVACUATION_WARNING",
+      "safe_haven_location": "Sanjauli High Plateau Shelter"
+    },
+    {
+      "id": 4,
+      "name": "Tea Valley Terraces, Munnar",
+      "state": "Kerala",
+      "district": "Idukki",
+      "latitude": 10.0889,
+      "longitude": 77.0595,
+      "population": 1650,
+      "area_sq_km": 1.8,
+      "max_safe_carrying_capacity": 2000,
+      "current_carrying_capacity_load_pct": 82.5,
+      "hazard_zone_tier": "GREEN",
+      "relocation_urgency_score": 28,
+      "slope_angle_deg": 18.0,
+      "rainfall_24h_mm": 45.0,
+      "soil_saturation_pct": 38.0,
+      "factor_of_safety": 1.68,
+      "evacuation_status": "MONITORING_NORMAL",
+      "safe_haven_location": "Devikulam Central Hall"
+    }
+  ],
+  "pre_assigned_accounts": [
+    {
+      "id": "usr_dm_01",
+      "name": "Dr. Dhrumi Vyas (IAS)",
+      "email": "dm.chamoli@sdma.gov.in",
+      "password": "SDMA@Lead2026!",
+      "role": "District Magistrate / SDMA Officer",
+      "department": "District Magistrate Office & SDMA Chamoli",
+      "badge": "SDMA Lead",
+      "jurisdiction": "Chamoli & Joshimath Hill Sectors",
+      "security_clearance": "Top Secret / Statutory Act 34 Authority"
+    },
+    {
+      "id": "usr_ndrf_02",
+      "name": "Cmdr. Vikram Singh Rathore",
+      "email": "commander.vikram@ndrf.gov.in",
+      "password": "NDRF@Rescue2026!",
+      "role": "NDRF / SDRF Incident Commander",
+      "department": "8th Battalion NDRF (Himalayan Quick Response)",
+      "badge": "🚨 NDRF Commander",
+      "jurisdiction": "Western & Central Himalayan Corridors",
+      "security_clearance": "Operational / Incident Response Lead"
+    },
+    {
+      "id": "usr_insar_03",
+      "name": "Dr. Ananya Roy",
+      "email": "ananya.roy@isro-geotech.res.in",
+      "password": "InSAR@Satellite2026!",
+      "role": "Geospatial & InSAR Researcher",
+      "department": "National Remote Sensing Centre (NRSC / ISRO)",
+      "badge": "🛰️ InSAR Scientist",
+      "jurisdiction": "Multi-Temporal Satellite Interferometry Core",
+      "security_clearance": "Technical / Geotechnical Modeling"
+    },
+    {
+      "id": "usr_town_04",
+      "name": "Er. Rajesh Verma",
+      "email": "rajesh.verma@townplanning.gov.in",
+      "password": "Town@Planning2026!",
+      "role": "Municipal Town Planning Officer",
+      "department": "Directorate of Urban Development & Hill Infrastructure",
+      "badge": "📐 Town Planner",
+      "jurisdiction": "Municipal Slopes & Construction Moratorium",
+      "security_clearance": "Administrative / Hill Town Norms"
+    },
+    {
+      "id": "usr_comm_05",
+      "name": "Smt. Kavita Rawat",
+      "email": "kavita.rawat@grampanchayat.org.in",
+      "password": "Gram@Suraksha2026!",
+      "role": "Community Response Lead",
+      "department": "Joshimath-Wayanad Local Citizen Council",
+      "badge": "🏘️ Community Lead",
+      "jurisdiction": "Ward-Level Evacuation & Shelter Coordination",
+      "security_clearance": "Field / Citizen Evacuation Officer"
+    }
+  ]
+}

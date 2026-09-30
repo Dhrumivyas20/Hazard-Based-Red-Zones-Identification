@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NARADA | Intelligent Hazard Red Zones, Carrying Capacity & Relocation Matrix</title>
+  <meta name="description"
+    content="AI-Powered Hazard-Based Red Zone Identification, Carrying Capacity Assessment, and Immediate Relocation Needs Engine for Vulnerable Habitations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L3 7V12C3 17.52 6.84 22.74 12 24C17.16 22.74 21 17.52 21 12V7L12 2Z"
+              fill="url(#logoGradient)" />
+            <path d="M12 6L6 9.5V13C6 16.5 8.5 20 12 21C15.5 20 18 16.5 18 13V9.5L12 6Z" fill="white" opacity="0.95" />
+            <defs>
+              <linearGradient id="logoGradient" x1="3" y1="2" x2="21" y2="24" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF6B35" />
+                <stop offset="1" stop-color="#FF3E00" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">NARADA</span>
+          <span class="brand-subtitle">Operational Command - Hazard & Relocation Intelligence</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link">Overview</a>
+        <a href="#features" class="nav-link">Core Capabilities</a>
+        <a href="#actions" class="nav-link">Operations Hub</a>
+        <a href="#deploy" class="nav-link">NDMA Directives</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline" onclick="document.getElementById('actions').scrollIntoView({behavior: 'smooth'})">Operations Hub</button>
+        <button class="btn btn-primary" id="btnLaunchPortal">Get Started &rarr;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <!-- Left Hero Content -->
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="sparkle-icon">✦</span>
+          <span>AI-Powered Hazard Prediction System</span>
+        </div>
+
+        <h1 class="hero-title">
+          Predicting Hazard Red Zones <br />
+          <span class="highlight-text">Before Disasters Strike</span>
+        </h1>
+
+        <p class="hero-description">
+          Advanced AI, InSAR satellite radar, and multi-criteria geospatial analytics to delineate hazard-based red
+          zones, evaluate local carrying capacity, and prioritize immediate relocation for vulnerable habitations.
+        </p>
+
+        <!-- Polished Stat Cards Row -->
+        <div class="stats-row">
+          <div class="stat-card stat-green">
+            <div class="stat-card-top">
+              <span class="stat-dot dot-green"></span>
+              <span class="stat-value">98.7%</span>
+            </div>
+            <div class="stat-label">AI Red-Zone Delineation</div>
+            <div class="stat-subtext">Satellite GIS Zonation</div>
+          </div>
+          <div class="stat-card stat-blue">
+            <div class="stat-card-top">
+              <span class="stat-dot dot-blue"></span>
+              <span class="stat-value">15+ Factors</span>
+            </div>
+            <div class="stat-label">AI Carrying Capacity Modeling</div>
+            <div class="stat-subtext">Socio-Ecological Load</div>
+          </div>
+          <div class="stat-card stat-orange">
+            <div class="stat-card-top">
+              <span class="stat-dot dot-orange"></span>
+              <span class="stat-value">&lt; 60s</span>
+            </div>
+            <div class="stat-label">AI Safe-Site & Relocation Dispatch</div>
+            <div class="stat-subtext">Instant Safe-Site Match</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Hero Visual Graphic -->
+      <div class="hero-visual">
+        <div class="radar-display-card">
+          <!-- Ambient radar circles -->
+          <div class="radar-circle radar-c1"></div>
+          <div class="radar-circle radar-c2"></div>
+          <div class="radar-circle radar-c3"></div>
+          <div class="radar-sweep"></div>
+
+          <!-- Central Core Shield Badge -->
+          <div class="core-shield">
+            <svg width="68" height="68" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L4 6V12C4 17.55 7.42 22.7 12 24C16.58 22.7 20 17.55 20 12V6L12 2Z" fill="white" />
+            </svg>
+          </div>
+
+          <!-- Floating Glassmorphism Chips with Status Badges -->
+            <div class="floating-chip chip-top-left float-anim-1">
+              <div class="chip-icon-box chip-icon-red">🔴</div>
+              <div class="chip-content">
+                <span class="chip-title">Hazard-Based Red Zones</span>
+                <span class="chip-badge badge-red">Critical Severity</span>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-top-right float-anim-2">
+              <div class="chip-icon-box chip-icon-green">⚖️</div>
+              <div class="chip-content">
+                <span class="chip-title">Carrying Capacity Assessment</span>
+                <span class="chip-badge badge-green">142% Overload</span>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-bottom-left float-anim-3">
+              <div class="chip-icon-box chip-icon-orange">🚨</div>
+              <div class="chip-content">
+                <span class="chip-title">Immediate Relocation Needs</span>
+                <span class="chip-badge badge-orange">Priority 1 Active</span>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-bottom-right float-anim-4">
+              <div class="chip-icon-box chip-icon-purple">🧭</div>
+              <div class="chip-content">
+                <span class="chip-title">Automatic Safe-Site Discovery</span>
+                <span class="chip-badge badge-purple">3 Safe Zones</span>
+              </div>
+            </div>
+
+          <div class="floating-chip chip-center-bottom">
+            <span class="chip-icon">🏘️</span>
+            <span class="chip-text">Carrying Capacity: 142% (Overloaded)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Title: Comprehensive Safety Solution -->
+  <section class="section-solution" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Comprehensive Safety & Relocation Solution</h2>
+        <p class="section-subtitle">
+          Powered by cutting-edge geospatial AI, hydrological modeling, and real-time vulnerability data analysis
+        </p>
+      </div>
+
+      <!-- 6-Card Grid matching sample layout -->
+      <div class="features-grid">
+        <!-- Card 1: AI Prediction -->
+        <div class="feature-card">
+          <div class="card-top-row">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 2a6 6 0 0 1 6 6c0 2.22-1.2 4.16-3 5.2V15a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1.8C7.2 12.16 6 10.22 6 8a6 6 0 0 1 6-6z">
+                </path>
+                <path d="M9 19h6"></path>
+                <path d="M10 22h4"></path>
+              </svg>
+            </div>
+            <span class="feature-category-tag">SPATIAL AI</span>
+          </div>
+          <h3 class="feature-title">AI Red Zone Prediction</h3>
+          <p class="feature-desc">
+            Deep neural networks analyze multi-temporal terrain strain, precipitation thresholds, and seismic fragility
+            to delineate high-risk Red Zones before disasters occur.
+          </p>
+          <div class="card-bottom-row">
+            <span class="feature-meta-badge">
+              <span class="meta-dot"></span>
+              98.7% Accuracy
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 2: Risk Mapping -->
+        <div class="feature-card">
+          <div class="card-top-row">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <span class="feature-category-tag">GIS MAPPING</span>
+          </div>
+          <h3 class="feature-title">Dynamic Red Zone Mapping</h3>
+          <p class="feature-desc">
+            Interactive multi-layered GIS heatmaps showing high-hazard buffer zones, landslide runout corridors, and
+            flash-flood susceptibility envelopes.
+          </p>
+          <div class="card-bottom-row">
+            <span class="feature-meta-badge">
+              <span class="meta-dot"></span>
+              InSAR & DEM Heatmaps
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 3: Smart Alerts & Relocation -->
+        <div class="feature-card">
+          <div class="card-top-row">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+            <span class="feature-category-tag">SMART ALERTS</span>
+          </div>
+          <h3 class="feature-title">Immediate Relocation Alerts</h3>
+          <p class="feature-desc">
+            Automated prioritization engine that ranks endangered habitations by urgency score, triggering instant
+            administrative dispatch and evacuation directives.
+          </p>
+          <div class="card-bottom-row">
+            <span class="feature-meta-badge">
+              <span class="meta-dot"></span>
+              &lt; 60s Dispatch
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 4: AI Relocation Priority Index -->
+        <div class="feature-card">
+          <div class="card-top-row">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
+            <span class="feature-category-tag">MCDA ENGINE</span>
+          </div>
+          <h3 class="feature-title">AI Relocation Priority Index</h3>
+          <p class="feature-desc">
+            Multi-criteria machine learning models rank endangered habitations by physical hazard severity, structural
+            density, and displacement urgency.
+          </p>
+          <div class="card-bottom-row">
+            <span class="feature-meta-badge">
+              <span class="meta-dot"></span>
+              Multi-Criteria Scoring
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 5: Automatic Safe-Site Discovery -->
+        <div class="feature-card">
+          <div class="card-top-row">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <span class="feature-category-tag">AUTONOMOUS SCAN</span>
+          </div>
+          <h3 class="feature-title">Automatic Safe-Site Discovery</h3>
+          <p class="feature-desc">
+            Autonomous geospatial algorithms evaluate terrain slope, hydrology, and access to automatically discover and
+            verify optimal low-risk resettlement zones.
+          </p>
+          <div class="card-bottom-row">
+            <span class="feature-meta-badge">
+              <span class="meta-dot"></span>
+              Hydrology & Slope Verified
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 6: Automated Relocation Action Directives -->
+        <div class="feature-card">
+          <div class="card-top-row">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <span class="feature-category-tag">NDMA DIRECTIVE</span>
+          </div>
+          <h3 class="feature-title">Automated Relocation Directives</h3>
+          <p class="feature-desc">
+            Generates NDMA-compliant phase-by-phase evacuation roadmaps connecting red zone settlements directly to
+            newly discovered safe sites.
+          </p>
+          <div class="card-bottom-row">
+            <span class="feature-meta-badge">
+              <span class="meta-dot"></span>
+              Phase-by-Phase Roadmap
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Feature CTA Operations Hub (Operations Hub) -->
+  <section class="cta-hub-section" id="actions">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">
+          <span class="pulse-beacon"></span>
+          <span>Interactive Operations Hub</span>
+        </div>
+        <h2 class="section-title">Launch Intelligent Hazard & Relocation Workflows</h2>
+        <p class="section-subtitle">
+          Direct access to autonomous geospatial algorithms, carrying capacity modeling, and evacuation planning.
+        </p>
+      </div>
+
+      <div class="cta-hub-grid">
+        <div class="cta-hub-card">
+          <div class="cta-card-header">
+            <div class="cta-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m4.93 4.93 4.24 4.24"></path>
+                <path d="m14.83 9.17 4.24-4.24"></path>
+                <path d="m14.83 14.83 4.24 4.24"></path>
+                <path d="m9.17 14.83-4.24 4.24"></path>
+                <circle cx="12" cy="12" r="4"></circle>
+              </svg>
+            </div>
+            <span class="cta-tag">AI Spatial Zonation</span>
+          </div>
+          <h3 class="cta-card-title">Find Hazard Red Zones</h3>
+          <p class="cta-card-desc">Delineate high-hazard landslide runout, slope shear strain, and flash-flood susceptibility polygons instantly.</p>
+          <button class="btn btn-feature-action" onclick="alert('Launching Find Red Zones workflow...')">
+            <span>Find Red Zones</span>
+            <span class="action-arrow">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="cta-hub-card">
+          <div class="cta-card-header">
+            <div class="cta-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <span class="cta-tag">Autonomous Discovery</span>
+          </div>
+          <h3 class="cta-card-title">Safe Relocation Sites</h3>
+          <p class="cta-card-desc">Scan surrounding topography to automatically discover, evaluate, and verify low-risk safe haven sites.</p>
+          <button class="btn btn-feature-action" onclick="alert('Launching Safe Relocation Sites discovery...')">
+            <span>Discover Safe Sites</span>
+            <span class="action-arrow">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="cta-hub-card">
+          <div class="cta-card-header">
+            <div class="cta-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                <path d="M7 21h10"></path>
+                <path d="M12 3v18"></path>
+                <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+              </svg>
+            </div>
+            <span class="cta-tag">Socio-Ecological Load</span>
+          </div>
+          <h3 class="cta-card-title">Carrying Capacity Assessment</h3>
+          <p class="cta-card-desc">Calculate land-stress threshold limits, infrastructure saturation, and demographic overcapacity.</p>
+          <button class="btn btn-feature-action" onclick="alert('Calculating Carrying Capacity...')">
+            <span>Assess Carrying Capacity</span>
+            <span class="action-arrow">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="cta-hub-card">
+          <div class="cta-card-header">
+            <div class="cta-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"></path>
+                <path d="m19 9-5 5-4-4-3 3"></path>
+              </svg>
+            </div>
+            <span class="cta-tag">MCDA Urgency Engine</span>
+          </div>
+          <h3 class="cta-card-title">Relocation Priority Index</h3>
+          <p class="cta-card-desc">Rank vulnerable mountain habitations by multi-criteria threat severity to prioritize rapid displacement.</p>
+          <button class="btn btn-feature-action" onclick="alert('Computing Relocation Priority Index...')">
+            <span>Calculate Priority Index</span>
+            <span class="action-arrow">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="cta-hub-card">
+          <div class="cta-card-header">
+            <div class="cta-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="19" r="3"></circle>
+                <path d="M9 19h8.5a4.5 4.5 0 0 0 0-9H5"></path>
+                <polyline points="8 6 5 9 8 12"></polyline>
+                <circle cx="18" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <span class="cta-tag">NDMA Directives</span>
+          </div>
+          <h3 class="cta-card-title">Generate Evacuation Roadmaps</h3>
+          <p class="cta-card-desc">Produce automated phase-by-phase transit corridors and administration action directives.</p>
+          <button class="btn btn-feature-action" onclick="alert('Generating Evacuation Roadmaps...')">
+            <span>Generate Roadmaps</span>
+            <span class="action-arrow">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="cta-hub-card">
+          <div class="cta-card-header">
+            <div class="cta-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="cta-tag">3D Elevation & InSAR</span>
+          </div>
+          <h3 class="cta-card-title">Explore Red-Zone GIS Map</h3>
+          <p class="cta-card-desc">Interactive topographic GIS contours, slope angle heatmaps, and habitations buffer overlays.</p>
+          <button class="btn btn-feature-action" onclick="alert('Opening 3D Red-Zone GIS Map...')">
+            <span>Explore GIS Map</span>
+            <span class="action-arrow">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section" id="deploy">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 class="cta-title">Ready to Safeguard Vulnerable Habitations?</h2>
+        <p class="cta-subtitle">
+          Join the future of predictive disaster mitigation, hazard red-zone delineation, and automated relocation
+          planning with NARADA.
+        </p>
+        <button class="btn btn-cta-action" id="btnCta">
+          Get Started <span class="arrow">&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="brand-logo footer-logo">
+          <div class="brand-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L3 7V12C3 17.52 6.84 22.74 12 24C17.16 22.74 21 17.52 21 12V7L12 2Z" fill="#FF6B35" />
+            </svg>
+          </div>
+          <span class="brand-title">NARADA</span>
+        </div>
+        <p class="footer-desc">
+          Intelligent identification of hazard red zones, carrying capacity modeling, and automated relocation matrices
+          for resilient communities.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="link-col">
+          <h4>Core Modules</h4>
+          <a href="#features">Red Zone Delineation</a>
+          <a href="#simulator">Carrying Capacity Index</a>
+          <a href="#relocation">Relocation Priority Matrix</a>
+          <a href="#features">InSAR Interferometry</a>
+        </div>
+        <div class="link-col">
+          <h4>Geospatial AI</h4>
+          <a href="#">LiDAR & DEM Slope Analysis</a>
+          <a href="#">Dynamic Safe Corridors</a>
+          <a href="#">Rainfall Threshold Engine</a>
+          <a href="#">NDMA Standards</a>
+        </div>
+        <div class="link-col">
+          <h4>Institutional</h4>
+          <a href="#">Disaster Management Auth</a>
+          <a href="#">District Collector Portal</a>
+          <a href="#">Emergency Dispatch</a>
+          <a href="#">Documentation & API</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 NARADA. Developed for Smart Disaster Risk Reduction & Relocation Management.</p>
+        <div class="sys-badge">
+          <span class="status-dot"></span> All Satellite & Geotechnical Systems Operational
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Relocation Plan Modal Dialog -->
+  <div class="modal-backdrop" id="evacModal">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseModal">&times;</button>
+      <div class="modal-header">
+        <div class="icon-modal">🚨</div>
+        <div>
+          <h3 class="modal-title">Immediate Relocation & Action Directive</h3>
+          <p class="modal-sub">Priority Dispatch Protocol #TS-2026-RED-09</p>
+        </div>
+      </div>
+      <div class="modal-content" id="modalPlanContent">
+        <!-- Injected via JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="btnDownloadPlan">📥 Export PDF Protocol</button>
+        <button class="btn btn-primary" id="btnDispatchAlert">Confirm Emergency Dispatch</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
