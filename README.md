@@ -3,6 +3,8 @@
 
 ---
 
+## Deployed Working Prototype : https://hazard-based-red-zones-identificati.vercel.app
+
 ## 🏗️ Architecture & Folder Structure
 
 ```
